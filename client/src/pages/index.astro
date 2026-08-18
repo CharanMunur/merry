@@ -1,0 +1,28 @@
+---
+import Layout from "@/layouts/main.astro"
+import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+---
+
+<Layout content={{ title: "Merry Client" }}>
+  <div class="grid place-items-center min-h-screen bg-background p-8">
+    <Card className="max-w-sm w-full">
+      <CardHeader>
+        <CardTitle>Welcome to Merry</CardTitle>
+        <CardDescription>
+          Your shadcn/ui setup is complete.
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="flex flex-col gap-4">
+        <p className="text-sm text-muted-foreground">Start building your Github stats card generator.</p>
+        <Button>Get Started</Button>
+      </CardContent>
+    </Card>
+  </div>
+</Layout>
